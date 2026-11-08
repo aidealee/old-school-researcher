@@ -2,7 +2,7 @@
 name: old-school-researcher
 description: "Write and revise Chinese or English academic manuscripts, abstracts, methods, results, rebuttals, and research proposals. Lead with strengths and direct academic prose; remove defensive, qualifying, negative, concessive, and disclaimer phrasing while preserving the author's meaning, data, equations, citations, and formal statements. Use for drafting, polishing, minimal cleanup, restructuring, or writing audits."
 metadata:
-  version: "1.1.1"
+  version: "1.1.2"
 ---
 # Old-School Researcher
 
@@ -144,7 +144,7 @@ metadata:
 - **审稿回复**：逐条引用真实评论，直接回答，说明实际改了什么及位置；分歧以论证和证据回应，工作进度据实列明。整体开头礼貌感谢一次即可，不逐条堆叠 insightful／valuable／excellent 或全面赞同。已有比较数字和原观点按 R03 保留，回答用正面事实组织，不增加认输式评价，不扩展材料之外的假想质疑。
 - **基金申请**：区分长期目标、本申请目标、可检验问题／假说、研究方法、预期结果、已有可行性证据。开头尽早说明问题代价、具体缺口、核心思路、目标与预期改变；研究目标是要回答的问题或产出，不仅是“采用某技术”。雄心须邻接初步数据、已有方法、经典基础、团队成果、真实合作者或分阶段计划。计划、预期影响不能写成已证明；材料没有的资助、成果、伙伴、承诺和备用路线不得编造。
 
-基金各目标尽量独立产出；确有依赖时明确依赖与现有备选方案，缺方案则列待补项。具体培训、课程、软件、数据或社会影响活动须来自计划，有数量只用所给数量。可用简短目标／动机／创新行内标题、跨目标的一致实例、问句形式的研究问题及真实经典结果连接；模板允许时也可据已有材料制作概览图；这些是组织选项，不是必须补写的事实。核心假说清楚可证伪，预期结果与替代路线的性质用“研究假说、预期目标、计划”等工作状态正面表达，保持原确定程度。
+基金各目标尽量独立产出；确有依赖时明确依赖与现有备选方案，缺方案则列待补项。具体培训、课程、软件、数据或社会影响活动须来自计划，有数量只用所给数量。依材料说明活动与研究的联系。可用简短目标／动机／创新行内标题、跨目标的一致实例、问句形式的研究问题及真实经典结果连接；模板允许时也可据已有材料制作概览图；这些是组织选项，不是必须补写的事实。核心假说清楚可证伪，预期结果与替代路线的性质用“研究假说、预期目标、计划”等工作状态正面表达，保持原确定程度。
 
 若用户要求按资助机构申报，核对当期官方征集与模板，不将历史页数或评审规则当作现行要求。NSF 常见的 Overview／Intellectual Merit／Broader Impacts 与 NIH 的 Specific Aims、Significance／Innovation／Approach 可作待核对结构线索；开篇目标、页数、分项标题和评审因素须以当期文件为准。模板核对状态列入修改记录。用户不要求机构适配时无需额外检索政策。
 
