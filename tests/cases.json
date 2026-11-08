@@ -1,0 +1,42 @@
+[
+  {
+    "id": "T01",
+    "request": "清理这段中文论文，保持一个段落，附简短中文修改记录。",
+    "input": "虽然 A 的准确率低于 B，但 A 的主要优势是延迟。数据集 D 上，A 的准确率为 90.0%，延迟为 16 ms [1]；B 的准确率为 92.0%，延迟为 20 ms [2]。两者使用相同硬件 H，样本量均为 100。"
+  },
+  {
+    "id": "T02",
+    "request": "润色英文正文，说明用中文，保持两段。",
+    "input": "Although the mechanism is not yet established, the intervention may improve retention. Our evidence is limited to cohort C (n = 40) at day 7 [3].\n\nThe preregistered mechanism analysis has not started. The analysis is scheduled for phase 2."
+  },
+  {
+    "id": "T03",
+    "request": "清理英文 LaTeX，正式陈述、公式、标签、引文和代码保持原文。",
+    "input": "It is worth noting that our solver reaches the stated objective [4].\n\\begin{proposition}\\label{prop:domain}\nIf x \\ne 0, then x^2 > 0. This does not hold for x = 0.\n\\end{proposition}\n\\[f(x)=x^2+2x+1\\]\nSee Proposition~\\ref{prop:domain}.\n```python\n# do not change the threshold\nassert value != 0\n```"
+  },
+  {
+    "id": "T04",
+    "request": "根据材料起草一段中文结果说明，附简短记录。材料只说明方法 Q 用于分类，指标为 F1，已有引用 [5]；具体数值、样本量、引文正文尚待提供。禁止追问。",
+    "input": "方法 Q 用于分类，采用 F1 评价 [5]。"
+  },
+  {
+    "id": "T05",
+    "request": "你上次把原稿的均值写成了中位数。直接修正，正文用英文。原稿：The mean latency was 12 ms in sample S (n = 30) [6]. 仅纠正这个错误，保留原引用。",
+    "input": "The median latency was 12 ms in sample S (n = 30) [6]."
+  },
+  {
+    "id": "T06",
+    "request": "润色中文，必要时拆句，保留一个段落。保留作者观点及全部复现信息，使用材料实际的数值方法，不新增精确计算或正式证明要求。",
+    "input": "我们的判断是该方法适合这两类样本，样本 S1 的 n = 20、均值为 3.2 [7]，样本 S2 的 n = 35、中位数为 4.1 [8]，使用 Python 3.11、float64、种子 17、容差 1e-6、硬件 H 和数据 v2，结果分别来自各自样本，计算过程采用浮点数值计算。"
+  },
+  {
+    "id": "T07",
+    "request": "仅清理 AI 腔，未命中句逐字保留。作者指定保留插入破折号和术语冷启动、robust estimator。保留标题编号与两个段落。",
+    "input": "## 2 方法\n\n冷启动阶段使用 robust estimator——下文沿用该名称。\n\n值得注意的是，模型 M 采用温度 0.7 [9]。"
+  },
+  {
+    "id": "T08",
+    "request": "只做诊断，不改正文。核对对象、条件、结论、引用的对应关系，保持作者观点；直接列出具体问题与最小改法，不预设读者质疑。",
+    "input": "作者判断：A 在样本 S 上的准确率为 92%，因此优于 B。表 1：A 在样本 S 上为 90% [10]；B 在样本 T 上为 92% [11]。叙述句将 A 的数值写为 92% [11]。"
+  }
+]

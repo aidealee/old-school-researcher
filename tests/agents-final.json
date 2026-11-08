@@ -1,0 +1,258 @@
+{
+  "phase": "final",
+  "form": "agents",
+  "rule_sha256": "31935eceb52486942ccd338c738efb18bcce7a19be20c5c7a02e9642d44fd95d",
+  "test_method": "Explicit single-rule-file loading; 8 synthetic cases. Final run reuses the same test agent after a rule revision and feedback.",
+  "results": [
+    {
+      "id": "T01",
+      "revised_text": "A 的主要优势是延迟。数据集 D 上，A 的准确率为 90.0%，延迟为 16 ms [1]；B 的准确率为 92.0%，延迟为 20 ms [2]。两者使用相同硬件 H，样本量均为 100。",
+      "report": {
+        "mode": "清理；中文；一个段落",
+        "change_count": 1,
+        "changes": [
+          {
+            "location": "第 1 句",
+            "rules": [
+              "R03",
+              "R05",
+              "R07"
+            ],
+            "original_fragment": "虽然 A 的准确率低于 B，但",
+            "action": "删除让步框架，直接陈述延迟优势。相邻句的 90.0% 与 92.0% 保留准确率比较事实，16 ms 与 20 ms 保留延迟依据。"
+          }
+        ],
+        "evidence_added": [],
+        "evidence_pending": [],
+        "protected_content_check": "人工核对：数据集 D、硬件 H、全部数值与单位、样本量 100 及 [1]、[2] 的归属均对应原稿；后两句逐字保留。",
+        "structure_suggestions": []
+      }
+    },
+    {
+      "id": "T02",
+      "revised_text": "The intervention is hypothesized to improve retention, and mechanism establishment is pending. The scope of our evidence is cohort C (n = 40) at day 7 [3].\n\nThe preregistered mechanism analysis is pending initiation. The analysis is scheduled for phase 2.",
+      "report": {
+        "mode": "润色；英文正文、中文说明；两个段落",
+        "change_count": 3,
+        "changes": [
+          {
+            "location": "第 1 段第 1 句",
+            "rules": [
+              "R03",
+              "R07",
+              "R08"
+            ],
+            "original_fragment": "Although the mechanism is not yet established, the intervention may improve retention.",
+            "action": "将 although 的让步关系拆为并列陈述；not yet established 转为机制建立待完成状态，may improve 转为改善 retention 的假说，保留确定程度。"
+          },
+          {
+            "location": "第 1 段第 2 句",
+            "rules": [
+              "R03",
+              "R07"
+            ],
+            "original_fragment": "Our evidence is limited to",
+            "action": "将 limited to 改为直接表述证据范围，范围仍为 cohort C、n = 40、day 7，引用 [3] 紧随该陈述。"
+          },
+          {
+            "location": "第 2 段第 1 句",
+            "rules": [
+              "R03",
+              "R07"
+            ],
+            "original_fragment": "has not started",
+            "action": "用 pending initiation 记录分析待启动状态；预注册属性及 phase 2 的安排保留。"
+          }
+        ],
+        "evidence_added": [],
+        "evidence_pending": [],
+        "work_status": "机制建立待完成；预注册机制分析待启动，安排于 phase 2。",
+        "protected_content_check": "人工核对：retention 改善保持假说性质，机制和分析进度保持原状态；cohort C、n = 40、day 7、[3]、phase 2 及两个段落完整保留。末句逐字保留。",
+        "structure_suggestions": []
+      }
+    },
+    {
+      "id": "T03",
+      "revised_text": "Our solver reaches the stated objective [4].\n\\begin{proposition}\\label{prop:domain}\nIf x \\ne 0, then x^2 > 0. This does not hold for x = 0.\n\\end{proposition}\n\\[f(x)=x^2+2x+1\\]\nSee Proposition~\\ref{prop:domain}.\n```python\n# do not change the threshold\nassert value != 0\n```",
+      "report": {
+        "mode": "清理；英文 LaTeX；原有布局",
+        "change_count": 1,
+        "changes": [
+          {
+            "location": "开头散文句",
+            "rules": [
+              "R10"
+            ],
+            "original_fragment": "It is worth noting that",
+            "action": "删除空洞强调，句首 Our 大写，保留求解器目标陈述与 [4]。"
+          }
+        ],
+        "removed_qualifiers": [],
+        "evidence_added": [],
+        "evidence_pending": [],
+        "protected_content_check": "人工逐字核对：正式命题及 proposition 环境、prop:domain 标签、公式、交叉引用、代码围栏、注释和断言原样保留。正式命题中的条件与否定归入 R03 保护项。",
+        "structure_suggestions": []
+      }
+    },
+    {
+      "id": "T04",
+      "revised_text": "方法 Q 用于分类，采用 F1 评价 [5]。[[EVIDENCE: F1 具体数值及对应样本量]] [[EVIDENCE: 引文 [5] 正文及其对前句的支持内容]]",
+      "report": {
+        "evidence_pending": [
+          "F1 具体数值",
+          "该 F1 数值对应的样本量",
+          "引文 [5] 正文及其对任务或评价指标的支持内容"
+        ],
+        "mode": "起草；中文；一个段落",
+        "change_count": 1,
+        "changes": [
+          {
+            "location": "材料原句之后",
+            "rules": [
+              "R02",
+              "R03",
+              "R16"
+            ],
+            "action": "保留现有事实，补入结果数据与文献支持两个证据占位。"
+          }
+        ],
+        "removed_qualifiers": [],
+        "evidence_added": [],
+        "read_scope": "本用例提供的 Q、分类任务、F1 指标和 [5] 标记。",
+        "work_status": "具体结果说明待 F1 数值、样本量与 [5] 正文支持内容填入。",
+        "protected_content_check": "人工核对：材料原句逐字保留，Q、分类、F1 与 [5] 对应原材料。",
+        "structure_suggestions": []
+      }
+    },
+    {
+      "id": "T05",
+      "revised_text": "The mean latency was 12 ms in sample S (n = 30) [6].",
+      "report": {
+        "mode": "指定错误修正；英文正文",
+        "change_count": 1,
+        "changes": [
+          {
+            "location": "句首统计量",
+            "rules": [
+              "R03",
+              "R18"
+            ],
+            "original_value": "median",
+            "new_value": "mean",
+            "basis": "请求所附原稿明确使用 mean。"
+          }
+        ],
+        "protected_content_check": "人工核对：12 ms、sample S、n = 30、[6] 及其余文字保留。"
+      }
+    },
+    {
+      "id": "T06",
+      "revised_text": "我们的判断是，该方法适合这两类样本。样本 S1 的 n = 20、均值为 3.2 [7]；样本 S2 的 n = 35、中位数为 4.1 [8]，结果分别来自各自样本。计算过程采用浮点数值计算，使用 Python 3.11、float64、种子 17、容差 1e-6、硬件 H 和数据 v2。",
+      "report": {
+        "mode": "润色；中文；一个段落",
+        "change_count": 1,
+        "changes": [
+          {
+            "location": "原稿长句",
+            "rules": [
+              "R03",
+              "R09",
+              "R12",
+              "R13"
+            ],
+            "action": "按作者判断、各自样本的结果、计算方法与复现设置组织为三句，减少长句中的归属辨认负担。"
+          }
+        ],
+        "removed_qualifiers": [],
+        "evidence_added": [],
+        "evidence_pending": [],
+        "protected_content_check": "人工核对：作者对两类样本的适用性判断保留；S1 的 n = 20、均值 3.2 与 [7] 对应，S2 的 n = 35、中位数 4.1 与 [8] 对应；Python 3.11、float64、种子 17、容差 1e-6、硬件 H、数据 v2 和浮点数值计算完整保留。",
+        "structure_suggestions": []
+      }
+    },
+    {
+      "id": "T07",
+      "revised_text": "## 2 方法\n\n冷启动阶段使用 robust estimator——下文沿用该名称。\n\n模型 M 采用温度 0.7 [9]。",
+      "report": {
+        "mode": "清理；作者指定保留插入破折号和术语；标题编号及两个正文段落保留",
+        "change_count": 1,
+        "changes": [
+          {
+            "location": "第 2 正文段落句首",
+            "rules": [
+              "R10"
+            ],
+            "original_fragment": "值得注意的是，",
+            "action": "删除空洞强调。"
+          }
+        ],
+        "removed_qualifiers": [],
+        "evidence_added": [],
+        "evidence_pending": [],
+        "protected_content_check": "人工核对：标题、编号 2 和第 1 段全文逐字保留；冷启动、robust estimator、插入破折号、M、0.7 与 [9] 完整保留。名称沿用说明承载术语一致性职责。",
+        "structure_suggestions": []
+      }
+    },
+    {
+      "id": "T08",
+      "revised_text": "作者判断：A 在样本 S 上的准确率为 92%，因此优于 B。表 1：A 在样本 S 上为 90% [10]；B 在样本 T 上为 92% [11]。叙述句将 A 的数值写为 92% [11]。",
+      "report": {
+        "mode": "诊断；正文逐字保留",
+        "change_count": 0,
+        "diagnostic_count": 3,
+        "diagnostics": [
+          {
+            "location": "作者判断与表 1 中的 A/S 准确率",
+            "original_fragments": [
+              "A 在样本 S 上的准确率为 92%",
+              "A 在样本 S 上为 90% [10]"
+            ],
+            "rules": [
+              "R02",
+              "R03",
+              "R08",
+              "R17"
+            ],
+            "problem_and_function": "同一对象 A、同一样本 S 对应 92% 与 90% 两个数值，二者承担比较判断与表格证据的对应职责。",
+            "minimal_action": "核对 A/S 的原始记录与 [10] 的支持内容，确认数值后同步相应叙述和表 1；当前记录数值冲突，保留作者原文。"
+          },
+          {
+            "location": "作者判断中的比较结论与表 1 的样本条件",
+            "original_fragments": [
+              "因此优于 B",
+              "A 在样本 S 上为 90% [10]；B 在样本 T 上为 92% [11]"
+            ],
+            "rules": [
+              "R02",
+              "R03",
+              "R08",
+              "R17"
+            ],
+            "problem_and_function": "作者给出 A 优于 B 的比较结论，表 1 的证据分别属于 A/S 和 B/T。实际跨样本比较设计、指标口径与评价条件的材料缺口，使可比性核对处于待完成状态。",
+            "minimal_action": "补录实际采用的比较设计、指标口径与评价条件，在现有 S、T 样本结构下核对比较依据；保留作者观点及两个样本的结果，将证据核实状态列入记录。"
+          },
+          {
+            "location": "末句的对象、数值及引用",
+            "original_fragment": "叙述句将 A 的数值写为 92% [11]。",
+            "rules": [
+              "R02",
+              "R03",
+              "R08",
+              "R17"
+            ],
+            "problem_and_function": "表 1 将 92% [11] 归于 B/T，末句将同一数值和引用归于 A，涉及结果转述及来源归属。",
+            "minimal_action": "核对末句拟转述的对象与来源：转述 A/S 时采用核实后的 A/S 数值及对应引用；转述表 1 的 B/T 记录时明确 B、T、92% 与 [11] 的对应关系。"
+          }
+        ],
+        "evidence_added": [],
+        "evidence_pending": [
+          "A/S 准确率的原始记录",
+          "[10]、[11] 的实际支持内容",
+          "原研究的跨样本比较设计、指标口径及评价条件"
+        ],
+        "protected_content_check": "人工核对：正文保留作者观点、全部数值、对象、样本、表号与引用；诊断定位数值冲突、实际比较设计的证据缺口及引用归属。",
+        "structure_suggestions": []
+      }
+    }
+  ]
+}

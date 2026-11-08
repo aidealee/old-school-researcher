@@ -1,0 +1,6 @@
+interface:
+  display_name: "Old-School Researcher"
+  short_description: "Direct academic writing with original meaning and data intact"
+  default_prompt: "Use $old-school-researcher to revise this academic text around its strengths, applying its direct-writing rules while preserving the author's meaning, data, equations, citations, and formal statements."
+policy:
+  allow_implicit_invocation: true
