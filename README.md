@@ -1,5 +1,12 @@
 # Old-School Researcher
 
+[简体中文](README.md) | [English](README.en.md)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/aidealee/old-school-researcher/pulls)
+
+**快捷入口：** [Skill](old-school-researcher/SKILL.md) · [AGENTS.md](paper-project/AGENTS.md)
+
 **让中英文学术写作更自然、直接、准确。** 当前版本：**1.1.2**。
 
 Old-School Researcher 为 AI 写作助手提供一套完整的学术写作与修改指令。它帮助作者围绕研究贡献组织论述，清理机械套话和防御性措辞，同时保留原文观点、数据、公式、引用与复现信息。
@@ -21,7 +28,7 @@ Old-School Researcher 为 AI 写作助手提供一套完整的学术写作与修
 | 在不同论文和任务中按需调用 | **Skill** | 安装 [Skill 目录](old-school-researcher)，调用 `$old-school-researcher` |
 | 让一个论文项目持续采用这套写作规范 | **AGENTS.md** | 将 [项目指令文件](paper-project/AGENTS.md) 放入论文项目，由客户端加载 |
 
-两份文件包含相同的完整写作规则。任选一份完整加载即可使用全部规则；配套说明和验证材料用于查阅。以下安装说明以 Codex 为例。
+两份文件包含相同的完整写作规则，各自独立生效。规范正文为中文，适用于中英文写作；任选一份完整加载即可使用全部规则。以下安装说明以 Codex 为例。
 
 ## 安装
 
@@ -100,13 +107,9 @@ Codex 按目录作用域和指令优先级加载项目规范。项目包含多�
 
 提供原稿或研究材料，并说明修改模式、目标语言和期刊／作者风格。说明语言跟随你的提问，正文语言遵循指定语言或原稿语言。默认交付完整改稿与简短修改记录，也可指定“只返回正文”。
 
-## 详细文档
+## 参与改进
 
-- [完整写作规则](old-school-researcher/SKILL.md)：查看各项表达、保真与核对要求。
-- [使用与设计说明](使用与设计说明.md)：查看规则设计及执行细节。
-- [完整要求对照](完整要求对照.md)：查看来源要求与两份规则的对应位置。
-- [修订记录](本次变更与对应.md)：查看版本变更。
-- [功能验证报告](功能验证报告.md)：查看各版本的验证方法、结果与范围。
+欢迎通过 [Pull Request](https://github.com/aidealee/old-school-researcher/pulls) 改进表达、使用说明或写作规则。修改规则时同步更新 Skill 与 AGENTS.md，保持两份正文一致且各自完整；修改使用说明时同步维护中英文 README。
 
 ## 来源与许可
 
@@ -116,3 +119,7 @@ Codex 按目录作用域和指令优先级加载项目规范。项目包含多�
 - [anti-defensive-writing-Skill](https://github.com/Adkid-Zephyr/anti-defensive-writing-Skill/tree/82d31402caa0db1790026824399044538483171b)，作者 Adkid-Zephyr。
 
 本项目采用 [MIT 许可证](LICENSE)，Copyright © 2026 aidealee。第三方作者归属、固定来源版本和完整许可见 [第三方通知](THIRD_PARTY_NOTICES.md) 与 [licenses/](licenses/)。Skill 和 AGENTS.md 各自保留第三方署名与完整许可文本，独立分发时一并保留。
+
+复制或分发任一入口时，也保留根目录 [LICENSE](LICENSE) 中的本项目版权与许可声明，可随文件附带或合并到目标项目的第三方许可说明中。
+
+开发协作规范见同系列项目 [Old-School Programmer](https://github.com/aidealee/old-school-programmer)。
