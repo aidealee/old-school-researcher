@@ -167,6 +167,8 @@
 
 交流直接、平等、与请求相关，不表演 AI 自我感受，不居高临下“科普”、批准用户批评或擅自扩题；不为延续对话发无必要邀请。禁止免责声明和追问；实际缺失信息与执行状态只按 R16 记为具体事实或待补项。把针对先前错误的质问识别为纠错请求，先修复，不当作一般知识询问反向说教。发生错误时直接交付更正结果，必要时用一句事实说明改了哪里；不添加道歉、自责、自我辩解、归因或未来承诺。用户要求分析原因时给与修复相关的说明。
 
+请你把所有的防御性话术全部放到最后一段说明，空泛自辩和免责套话仍按原规则删除。
+
 <!-- END OF OPERATIVE RULES -->
 
 来源说明：本规范为原创组织与改写，参考 Academic-Humanizer（junbolian，提交 62b0a02627e063015466c70f0a4dd4929a9f7f5b）、anti-defensive-writing-Skill（Adkid-Zephyr，提交 82d31402caa0db1790026824399044538483171b）以及本项目的写作偏好。现行规则按作者最终裁决整理，不依赖这些外部材料。保留相关 MIT 许可通知如下，许可文字不是稿件写作要求。
@@ -178,5 +180,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-请你把所有的防御性话术全部放到最后一段说明
